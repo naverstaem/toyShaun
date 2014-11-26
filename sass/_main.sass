@@ -112,7 +112,7 @@ header
       text-align: left !important
       color: #ffffff
       margin-top: 0
-    h2
+    h3
       font-family: 'core_rhino_65_boldregular'
       font-size: 16.3px
       position: relative
@@ -144,6 +144,88 @@ header
     margin: 0 -25px
     position: relative
     z-index: 1
+
+
+.info
+  background: url(../img/info_bg.png)
+  +cover
+  padding-top: 100px
+  padding-bottom: 70px
+  .row
+    .col-md-6
+      &:first-child
+        margin-top: 60px
+  &__header
+    h2
+      font-family: 'bouquetregular'
+      font-size: 58.5px
+      text-align: left !important
+      color: #272727
+      margin-top: 0
+    h3
+      font-family: 'core_rhino_65_boldregular'
+      font-size: 13.5px
+      position: relative
+      top: 15px
+      left: 48px
+      color: #272727
+      margin: 0
+  h4
+    font-family: 'core_rhino_65_boldregular'
+    font-size: 23px
+    color: #251f1f
+    margin-top: 20px
+    margin-bottom: 15px
+    letter-spacing: -1px
+  p
+    color: #444444
+    font-size: 18.5px
+    font-family: 'core_rhino_45_regularregular'
+
+  &__img
+    text-align: center
+    img
+      width: 100%
+      max-width: 440px
+
+
+.look
+  background: url(../img/look_bg.png)
+  +cover
+  padding-top: 50px
+  padding-bottom: 90px
+  text-align: center
+  h2
+    font-size: 58px
+    font-family: 'bouquetregular'
+    color: #ffffff
+  &__video
+    display: inline-block
+    margin-top: 25px
+    position: relative
+    img
+      +border-radius(5px)
+    span
+      position: absolute
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      +opacity(0)
+      background: rgba(0,0,0, .6)
+      +border-radius(5px)
+      &:before
+        position: absolute
+        content: ''
+        top: 50%
+        left: 50%
+        +transform(translate(-50%,-50%))
+        background: url(../img/play.png) no-repeat
+        width: 87px
+        height: 62px
+      &:hover
+        +opacity(1)
+
 
 
 .intro
