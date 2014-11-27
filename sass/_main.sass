@@ -214,6 +214,7 @@ header
       +opacity(0)
       background: rgba(0,0,0, .6)
       +border-radius(5px)
+      +transition(background, 500ms)
       &:before
         position: absolute
         content: ''
@@ -229,233 +230,60 @@ header
 
 
 .intro
-  padding-top: 30px
+  padding-top: 65px
+  padding-bottom: 45px
   &__img
     text-align: center
     img
       width: 100%
-      max-width: 246px
+      max-width: 462px
 
   &__text
-    padding-top: 50px
-    color: #333
-    font-family: 'NeoSansW1G-Regular'
+    padding-top: 10px
+    color: #444
     h2
-      font-size: 27px
-      font-weight: normal
+      font-size: 39px
+      color: #282828
+      font-family: 'bouquetregular'
     p
-      font-size: 18px
+      font-size: 18.5px
       margin-top: 20px
+      font-family: 'core_rhino_45_regularregular'
 
 
 
 
 
-.about
-  padding: 100px 0
-  font-family: 'NeoSansW1G-Medium'
-  color: #333333
-  +box-shadow(inset black 0 20px 40px -32px)
-
-  h2
-    letter-spacing: -1px
-    text-align: left
-    margin: 30px 0 0
-  h3
-    margin-top: 5px
-    margin-bottom: 35px
-    font-size: 21px
-
-  p
-    font-size: 16px
-    font-family: 'NeoSansW1G-Regular'
-    line-height: 1.7em
-  .about__img
-    text-align: center
-    img
-      width: 100%
-      max-width: 277px
-
-
-.features
-  background: rgb(246,246,247)
-  padding: 80px 0
-  .item
-    text-align: center
-    color: #333
-    margin-top: 50px
-    .item__img
-      text-align: center
-      display: inline-block
-      width: 96px
-      height: 96px
-      +border-radius(50%)
-      border: solid 3px #9fbe4b
-      .vertical-aligned
-        height: 100%
-        display: inline-block
-        vertical-align: middle
-      img
-        display: inline-block
-        vertical-align: middle
-
-
-    p
-      font-size: 20px
-      font-family: 'NeoSansW1G-Regular'
-      margin-top: 10px
-
-.specs
-  padding: 80px 0
-  border-bottom: solid 1px #e5e5e5
-  h2
-    text-align: left
-    margin-bottom: 55px
-
-  table
-    border-collapse: separate
-    font-family: 'NeoSansW1G-Regular'
-    color: #1b1b1b
-    tbody
-      font-size: 14px
-      tr
-        &:nth-child(odd)
-          background: rgb(246,246,246)
-    tr
-      td
-        border: none
-        padding: 7px 0
-        &:nth-child(odd)
-          color: #8e8e8e
-          +border-top-left-radius(16px)
-          +border-bottom-left-radius(16px)
-          padding-left: 15px
-        &:nth-child(even)
-          +border-top-right-radius(16px)
-          +border-bottom-right-radius(16px)
-      th
-        width: 35%
-        border: none
-  &__colors
-    padding-left: 15px
-    font-family: 'NeoSansW1G-Regular'
-    font-size: 14px
-    color: #8e8e8e
-
-    span
-      display: inline-block
-      vertical-align: middle
-      width: 28px
-      height: 28px
-      margin-left: 10px
-      +border-radius(50%)
-      &.white
-        background: #f6f6f6
-      &.black
-        background: #0c0c0c
-      &.yellow
-        background: #ffd100
-      &.orange
-        background: #ff8900
-
-  &__img
-    text-align: center
-    img
-      width: 100%
-      max-width: 198px
-      +border-radius(50%)
-      margin-top: 40px
-      &:first-child
-        margin-top: 10px
-
-
-.options
-
-  padding-top: 10px
-  padding-bottom: 65px
-  &__img
-    text-align: center
-    img
-      width: 100%
-      max-width: 407px
-  &__text
-    text-align: left
-    padding-top: 80px
-    h2
-      text-align: left
-      margin-top: 0
-    ul
-      padding-top: 35px
-      list-style: none
-      font-family: 'NeoSansW1G-Regular'
-      font-size: 16px
-      color: #333
-      padding-left: 50px
-      letter-spacing: -0.5px
-      li
-        position: relative
-        margin-top: 25px
-        i
-          position: absolute
-          top: -5px
-          left: -50px
-          content: ""
-          width: 33px
-          height: 33px
-          +border-radius(4px)
-          +background-clip(padding-box)
-          background-color: #abc563
-          &:before
-            position: absolute
-            content: ""
-            top: 50%
-            left: 50%
-            +transform(translate(-50%,-50%))
-          &.i1
-            &:before
-              background: url(../img/options_img1.png) center no-repeat
-              width: 13px
-              height: 24px
-          &.i2
-            &:before
-              background: url(../img/options_img2.png) center no-repeat
-              width: 21px
-              height: 20px
-          &.i3
-            &:before
-              background: url(../img/options_img3.png) center no-repeat
-              width: 15px
-              height: 24px
-          &.i4
-            &:before
-              background: url(../img/options_img4.png) center no-repeat
-              width: 23px
-              height: 13px
-          &.i5
-            &:before
-              background: url(../img/options_img5.png) center no-repeat
-              width: 15px
-              height: 20px
-          &.i6
-            &:before
-              background: url(../img/options_img6.png) center no-repeat
-              width: 19px
-              height: 18px
 .works
   text-align: center
-  padding-top: 70px
-  padding-bottom: 80px
-  background: url(../img/work_bg.png)
+  padding-top: 50px
+  padding-bottom: 100px
+  background: url(../img/works_bg.png)
   +cover
+  h2
+    font-family: 'bouquetregular'
+    font-size: 73px
+    color: #ffffff
   &__item
-    margin-top: 40px
-    img
-      margin-bottom: 30px
+    margin-top: 35px
     p
-      font-family: 'NeoSansW1G-Regular'
-      font-size: 17px
-      color: #242424
-      padding: 0 10px
+      font-family: 'core_rhino_55_mediumregular'
+      font-size: 16px
+      color: #ffffff
+      padding: 0 5px
+
+  &__img
+    display: inline-block
+    width: 128px
+    height: 128px
+    +border-radius(50%)
+    border: solid 5px #ffffff
+    line-height: 118px
+    margin-bottom: 40px
+    img
+      vertical-align: middle
+      display: inline-block
+
 
 
 .reviews
