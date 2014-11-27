@@ -122,7 +122,7 @@ header
       left: 55px
       color: #ffffff
       margin: 0
-
+      display: inline-block
 
   .header__text
     color: #ffffff
@@ -501,8 +501,15 @@ footer
     border: none
     .close
       position: absolute
+      color: #ffffff
+      +single-text-shadow()
       top: 7px
       right: 10px
+      +opacity(.5)
+      > span
+        font-size: 24px
+      &:hover
+        +opacity(.8)
 
   .modal-header
     border-bottom: none
@@ -556,7 +563,7 @@ footer
 .add-review
   @extend .feedback
   .modal-dialog
-    max-width: 567px
+    max-width: 570px
   .modal-content
   .modal-header
     padding-top: 30px
@@ -570,6 +577,7 @@ footer
       input[type = text]
         display: inline-block
         margin-right: 5px
+        max-width: 230px
         &:last-child
           margin-right: 0
 
@@ -593,8 +601,8 @@ footer
         .checkbox
           display: inline-block
           text-align: left
-          font-size: 16px
-          font-family: 'NeoSansW1G-Regular'
+          font-size: 14px
+          font-family: 'core_rhino_45_regularregular'
           >input
             display: none
             &:checked
@@ -607,7 +615,7 @@ footer
                     height: 10px
                     +border-radius(1px)
                     +background-clip(padding-box)
-                    background-color: #e74d6d
+                    background-color: #f3551f
                     top: 50%
                     left: 50%
                     +transform(translate(-50%,-50%))
@@ -651,34 +659,27 @@ footer
 .thanks
   @extend .feedback
   .modal-backdrop
-    background: #000
-    &.in
-      +opacity(.71)
   .modal-dialog
-    max-width: 441px
+    max-width: 413px
+    background: url(../img/thanks_bg.png)
+    +cover
   .modal-content
     position: relative
+    .close
+      display: none
   .modal-header
     .img
-      width: 96px
-      height: 96px
-      +border-radius(50%)
-      border: solid 3px #9ad300
+      width: 137px
+      height: 145px
       margin: 0 auto
-      .vertical-aligned
-        height: 100%
-        display: inline-block
-        vertical-align: middle
       img
         display: inline-block
-        vertical-align: middle
-        position: relative
-        top: -3px
     h2
       font-size: 45px
     h3
       font-size: 18px
       padding: 0
+      font-family: 'core_rhino_35_lightregular'
   .modal-body
     padding: 20px 20px 50px
 
@@ -687,29 +688,16 @@ footer
 @media (max-width: $screen-md-min)
   header
     overflow: hidden
-    //.header__form
-    //  margin: 0
-  //.specs
-  //  .specs__img
-  //    img
-  //      margin-top: 40px
-  //.form
-  //  padding-left: 80px
-  //  padding-right: 80px
-  //.other
-  //  .item
-  //    padding-left: 80px
-  //    padding-right: 80px
 @media (max-width: $screen-sm-min)
   h1, h2
     font-size: 24px !important
-  //.reviews
-  //  &__img
-  //    float: none
-  //  &__text
-  //    float: none
-
-//@media (max-width: $screen-xs-min)
-//  .form
-//    padding-left: 30px !important
-//    padding-right: 30px !important
+  header
+    .header__text-top
+      h3
+        top: 0
+        left: 0
+  .info
+    &__header
+      h3
+        top: 0
+        left: 0

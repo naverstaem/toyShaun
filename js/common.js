@@ -13,11 +13,7 @@ head.ready(function() {
 	sendbtn.disabled = true;
 	jQuery(document).ready(function($){
 		checker.onchange = function(){
-			if(this.checked){
-				sendbtn.disabled = false;
-			} else {
-				sendbtn.disabled = true;
-			}
+			sendbtn.disabled = !this.checked;
 
 		};
 	});
