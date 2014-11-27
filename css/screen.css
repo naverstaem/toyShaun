@@ -1669,14 +1669,14 @@ input::placeholder, textarea::placeholder { font-size: 15px; text-transform: non
 .form__form input:focus { -webkit-box-shadow: 0 0 9px rgba(204, 62, 82, 0.13); box-shadow: 0 0 9px rgba(204, 62, 82, 0.13); }
 .form__form button { width: 100%; text-transform: none; height: 49px; font-size: 26px; margin-top: 15px; font-family: "bouquetregular"; }
 
-.top { border-top-width: 27px; border-image-source: url(../img/border_bg.png); border-image-repeat: repeat; border-image-slice: 27 1 0 1; padding-bottom: 25px; }
+.top { border-top-width: 27px; border-image-source: url(../img/border_bg.png); border-image-repeat: repeat; border-image-slice: 27 1 0 1; padding-bottom: 0; }
 
 .navbar { margin-bottom: 0; }
 
-.navbar-brand { text-transform: uppercase; color: #98c700 !important; font-style: italic; font-size: 47px; margin-top: -23px; margin-right: 20px; padding: 0; }
+.navbar-brand { text-transform: uppercase; color: #98c700 !important; font-style: italic; font-size: 47px; margin-top: -23px; margin-right: 20px; padding: 0 0 127px; }
 .navbar-brand span { color: #333; }
 
-.navbar-default { border: none; background: none; padding: 20px 0; text-align: center; }
+.navbar-default { border: none; background: none; padding: 20px 0; padding-bottom: 10px; text-align: center; }
 .navbar-default .icon-bar { background-color: #333 !important; }
 .navbar-default .navbar-nav { margin-top: 15px; }
 .navbar-default .navbar-nav li a { color: #282828; font-family: "core_rhino_65_boldregular"; font-size: 19px; position: relative; text-transform: none; text-decoration: none; }
@@ -1767,10 +1767,10 @@ header .header__form, .header--bottom .header__form { margin: 0 -25px; position:
 .other input:focus { -webkit-box-shadow: 0 0 9px rgba(204, 62, 82, 0.13); box-shadow: 0 0 9px rgba(204, 62, 82, 0.13); }
 .other button { width: 100%; font-family: "bouquetregular"; text-transform: none; font-size: 26px; margin-top: 15px; }
 
-footer { padding-top: 35px; padding-bottom: 40px; font-family: "NeoSansW1G-Regular"; color: #414141; background: url(../img/footer_bg.png); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+footer { -webkit-box-shadow: inset 0 20px 40px -32px black; box-shadow: inset 0 20px 40px -32px black; padding-top: 35px; padding-bottom: 20px; font-family: "core_rhino_45_regularregular"; color: #414141; border-bottom-width: 33px; border-image-source: url(../img/border-footer_bg.png); border-image-repeat: repeat; border-image-slice: 0 1 33 1; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 footer span { display: inline-block; position: relative; margin-right: 10px; }
-footer p { font-size: 16px; display: inline-block; vertical-align: middle; margin-bottom: 0; line-height: 1.7em; font-family: "NeoSansW1G-Medium"; }
-footer .footer__right { text-align: right; font-size: 15px; }
+footer p { font-size: 14px; display: inline-block; vertical-align: middle; margin-bottom: 0; line-height: 1.7em; }
+footer .footer__right { text-align: right; font-size: 13px; }
 footer .footer__right a { margin-left: 15px; color: #414141; text-decoration: underline; }
 footer .footer__right a:hover { text-decoration: none; }
 

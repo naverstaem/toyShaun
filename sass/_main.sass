@@ -3,7 +3,7 @@
   border-image-source: url(../img/border_bg.png)
   border-image-repeat: repeat
   border-image-slice: 27 1 0 1
-  padding-bottom: 25px
+  padding-bottom: 0
 
 .navbar
   margin-bottom: 0
@@ -15,7 +15,7 @@
   font-size: 47px
   margin-top: -23px
   margin-right: 20px
-  padding: 0
+  padding: 0 0 127px
 
   span
     color: #333
@@ -23,6 +23,7 @@
   border: none
   background: none
   padding: 20px 0
+  padding-bottom: 10px
   text-align: center
   .icon-bar
     background-color: #333 !important
@@ -448,27 +449,29 @@ header
 
 
 footer
-
+  +box-shadow(inset 0 20px 40px -32px black)
   padding-top: 35px
-  padding-bottom: 40px
-  font-family: 'NeoSansW1G-Regular'
+  padding-bottom: 20px
+  font-family: 'core_rhino_45_regularregular'
   color: #414141
-  background: url(../img/footer_bg.png)
+  border-bottom-width: 33px
+  border-image-source: url(../img/border-footer_bg.png)
+  border-image-repeat: repeat
+  border-image-slice: 0 1 33 1
   +cover
   span
     display: inline-block
     position: relative
     margin-right: 10px
   p
-    font-size: 16px
+    font-size: 14px
     display: inline-block
     vertical-align: middle
     margin-bottom: 0
     line-height: 1.7em
-    font-family: 'NeoSansW1G-Medium'
   .footer__right
     text-align: right
-    font-size: 15px
+    font-size: 13px
     a
       margin-left: 15px
       color: #414141
