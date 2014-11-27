@@ -170,6 +170,7 @@ header
       left: 48px
       color: #272727
       margin: 0
+      display: inline-block
   h4
     font-family: 'core_rhino_65_boldregular'
     font-size: 23px
@@ -288,70 +289,68 @@ header
 
 .reviews
   padding: 40px
+  h2
+    font-family: 'bouquetregular'
+    font-size: 58px
+    color: #282828
+    text-align: center
+  .row
+    .col-md-6
+      &:last-child
+        .reviews__item
+          border-right: none
   &__item
     margin-top: 45px
     text-align: center
-    font-family: 'uni_sans_regularregular'
-  &__img
-    display: inline-block
-    float: left
-    width: 40%
-    text-align: left
-  &__text
-    font-family: 'NeoSansW1G-Regular'
-    text-align: left
-    float: right
-    padding-left: 10px
-    width: 60%
-    h3
-      font-size: 21px
-      color: #242424
-      margin: 0
+    font-family: 'core_rhino_55_mediumregular'
+    border-right: 2px dashed #dadada
+    font-size: 18px
+    color: #242424
+    padding-right: 25px
     h4
-      font-size: 16px
+      font-size: 14px
       color: #999
     p
-      display: inline-block
-      position: relative
-      margin-top: 15px
-      color: #414040
-      font-size: 15px
-      padding: 15px
-      border: 1px solid #abc563
-      +border-radius(3px)
-      +background-clip(padding-box)
-      &:before
-        position: absolute
-        content: ""
-        top: -11px
-        left: 20px
-        background: url(../img/popup-ico.png) no-repeat
-        width: 31px
-        height: 13px
-        line-height: 1.5em
-
+      margin-top: 25px
+      color: #333
+      font-size: 18px
+      padding: 0 25px
   &__buttons
     text-align: center
-    padding-top: 50px
+    padding-top: 70px
   &__more
     display: block
-    height: 49px
+    color: #333
+    height: 47px
     width: 100%
-    max-width: 176px
+    max-width: 173px
     margin: 0 auto
     font-size: 21px
-    font-family: 'NeoSansW1G-Regular'
+    +border-radius(4px)
+    +background-clip(padding-box)
+    border: 3px solid #e73d3d
+    background: #ffffff
+    +box-shadow(0 0 0 0)
+    text-shadow: none
+    +tr(background 500ms)
+    font-family: 'core_rhino_55_mediumregular'
+    &:hover, &:focus, &:active
+      background: #e73d3d
+      color: #ffffff
+      +single-text-shadow()
+
   &__add-review
     display: inline-block
-    margin: 20px auto 0
-    font-family: 'NeoSansW1G-Regular'
+    margin: 15px auto 0
+    font-family: 'core_rhino_55_mediumregular'
     font-size: 16px
-    color: #414141
-    border-bottom: dotted 1px
+    color: #333
+    border-bottom: dotted 2px rgba(#333,.7)
     text-decoration: none
+    line-height: 1em
     &:hover, &:active, &:focus
-      border-bottom: dotted 1px #ffffff
-      color: #414141
+      border-bottom: dotted 2px #ffffff
+      color: #333
       text-decoration: none
 
 .header--bottom
