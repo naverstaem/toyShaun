@@ -486,18 +486,19 @@ footer
   .modal-backdrop
     background: #fff
     &.in
-      +opacity(.71)
+      +opacity(.73)
   .modal-dialog
     +border-radius(3px)
-    max-width: 567px
+    max-width: 570px
     +background-clip(padding-box)
-    background: rgba(#fff,.88)
-    +box-shadow(0 8px 46px rgba(0,0,0,.44))
-
+    background: url(../img/feedback_bg.png)
+    +cover
+    +box-shadow(0 5px 51px rgba(0,0,0,.53))
   .modal-content
     position: relative
     +border-radius(3px)
     background: transparent
+    border: none
     .close
       position: absolute
       top: 7px
@@ -506,15 +507,15 @@ footer
   .modal-header
     border-bottom: none
     padding-top: 30px
+    color: #ffffff
     h2
       margin-top: 15px
-      font-family: 'NeoSansW1G-Regular'
-      font-size: 45px
+      font-family: 'bouquetregular'
+      font-size: 48px
     h3
-      font-family: 'NeoSansW1G-Regular'
-      color: black
+      font-family: 'core_rhino_45_regularregular'
       font-size: 17px
-      padding: 0 15px
+      padding: 0 25px
       line-height: 1.2em
 
 
@@ -525,19 +526,18 @@ footer
       input[type = text]
         +placeholder
           font-size: 16px
-        height: 42.5px
+        height: 51px
         display: block
         +border-radius(2px)
         +background-clip(padding-box)
         background: #fbfbfb
-        +box-shadow(inset 0 1px 2px rgba(0,0,0,.36))
         width: 100%
         border: none
         margin: 0 auto 10px
-        font-size: 16px
+        font-size: 17px
         color: #333
-        max-width: 230px
-        font-family: 'uni_sans_regularregular'
+        max-width: 240px
+        font-family: 'core_rhino_35_lightregular'
         padding-left: 10px
         &:focus
           +box-shadow(0 0 5px rgba(79,56,109,.27), inset 0 1px 2px rgba(0,0,0,.36))
@@ -545,11 +545,11 @@ footer
 
       button
         width: 100%
-        font-size: 21px
-        max-width: 230px
-        font-family: 'NeoSansW1G-Medium'
-        height: 46.4px
-        text-transform: uppercase
+        font-size: 26px
+        max-width: 240px
+        font-family: 'bouquetregular'
+        height: 49px
+        text-transform: none
         display: block
         margin: 30px auto 0
 
