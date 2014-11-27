@@ -1693,6 +1693,7 @@ input::placeholder, textarea::placeholder { font-size: 15px; text-transform: non
 .navbar-default .navbar-right .right-b a i { position: relative; background: url(../img/phone-ico.png) no-repeat; width: 16px; height: 16px; margin-right: 5px; top: 4px; display: inline-block; }
 
 header, .header--bottom { padding-top: 35px; background: url(../img/header_bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+header .header__text-top, .header--bottom .header__text-top { position: relative; z-index: 1; }
 header .header__text-top h1, .header--bottom .header__text-top h1 { font-family: "bouquetregular"; font-size: 71px; text-align: left !important; color: #ffffff; margin-top: 0; }
 header .header__text-top h3, .header--bottom .header__text-top h3 { font-family: "core_rhino_65_boldregular"; font-size: 16.3px; position: relative; top: 28px; left: 55px; color: #ffffff; margin: 0; }
 header .header__text, .header--bottom .header__text { color: #ffffff; font-family: "core_rhino_65_boldregular"; font-size: 17px; margin-top: 25px; position: relative; z-index: 1; }
@@ -1743,14 +1744,20 @@ header .header__form, .header--bottom .header__form { margin: 0 -25px; position:
 .reviews__add-review { display: inline-block; margin: 15px auto 0; font-family: "core_rhino_55_mediumregular"; font-size: 16px; color: #333; border-bottom: dotted 2px rgba(51, 51, 51, 0.7); text-decoration: none; line-height: 1em; }
 .reviews__add-review:hover, .reviews__add-review:active, .reviews__add-review:focus { border-bottom: dotted 2px #ffffff; color: #333; text-decoration: none; }
 
-.other { padding-top: 70px; text-align: center; padding-bottom: 55px; }
-.other .item { padding: 30px 40px 100px; margin-top: 30px; margin-left: -15px; margin-right: -15px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; -moz-background-clip: padding; -o-background-clip: padding-box; -webkit-background-clip: padding; background-clip: padding-box; text-align: center; background: url(../img/other-form_bg.png) no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
-.other .item h3 { font-size: 23px; font-family: "NeoSansW1G-Regular"; color: #181818; margin: 0 0 10px; }
+.header--bottom { padding-top: 0; }
+.header--bottom .header__text-top--bottom { margin-top: 70px; }
+.header--bottom .header__text--bottom p { font-family: "core_rhino_65_boldregular"; font-size: 29px; line-height: 1.2em; }
+.header--bottom .header__img--bottom { top: -170px; }
+
+.other { padding-top: 120px; text-align: center; padding-bottom: 55px; }
+.other h2 { font-family: "bouquetregular"; font-size: 58px; color: #282828; position: relative; z-index: 1; }
+.other .item { padding: 30px; margin-top: 10px; text-align: center; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.other .item h3 { font-size: 18px; font-family: "core_rhino_45_regularregular"; color: #181818; margin: 0 0 15px; padding: 0 20px; }
 .other .item p { font-size: 29px; color: #181818; text-transform: uppercase; }
-.other .img { display: inline-block; background: #ffffff; text-align: center; margin-bottom: 15px; height: 179px; }
-.other .img span { vertical-align: middle; display: inline-block; height: 100%; }
+.other .img { display: inline-block; background: #ffffff; text-align: center; margin-bottom: 20px; height: 232px; width: 232px; -moz-border-radius: 117px; -webkit-border-radius: 117px; border-radius: 117px; border: solid 6px #c4422c; line-height: 220px; }
 .other .img img { vertical-align: middle; display: inline-block; }
-.other .price-b { font-family: "NeoSansW1G-Bold"; color: #181818; font-size: 26px; margin-bottom: 15px; }
+.other .price-b { font-family: "core_rhino_45_regularregular"; color: #181818; font-size: 26px; margin-bottom: 15px; }
+.other form { padding: 0 5px; }
 .other input { width: 100%; height: 35.5px; margin-bottom: 10px; padding-left: 15px; font-size: 16px; -moz-background-clip: padding; -o-background-clip: padding-box; -webkit-background-clip: padding; background-clip: padding-box; border: 1px solid rgba(204, 204, 204, 0.59); -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -moz-background-clip: padding; -o-background-clip: padding-box; -webkit-background-clip: padding; background-clip: padding-box; background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMSUiIHN0b3AtY29sb3I9IiNmZmZmZmYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(1%, #ffffff), color-stop(100%, #ffffff)); background-image: -moz-linear-gradient(top, #ffffff 0%, #ffffff 1%, #ffffff 100%); background-image: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 1%, #ffffff 100%); background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 1%, #ffffff 100%); }
 .other input:-ms-input-placeholder { font-size: 16px; }
 .other input:-moz-placeholder { font-size: 16px; }
@@ -1758,7 +1765,7 @@ header .header__form, .header--bottom .header__form { margin: 0 -25px; position:
 .other input::-webkit-input-placeholder { font-size: 16px; }
 .other input::placeholder { font-size: 16px; }
 .other input:focus { -webkit-box-shadow: 0 0 9px rgba(204, 62, 82, 0.13); box-shadow: 0 0 9px rgba(204, 62, 82, 0.13); }
-.other button { width: 100%; font-family: "NeoSansW1G-Regular"; text-transform: uppercase; font-size: 21px; margin-top: 15px; }
+.other button { width: 100%; font-family: "bouquetregular"; text-transform: none; font-size: 26px; margin-top: 15px; }
 
 footer { padding-top: 35px; padding-bottom: 40px; font-family: "NeoSansW1G-Regular"; color: #414141; background: url(../img/footer_bg.png); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 footer span { display: inline-block; position: relative; margin-right: 10px; }

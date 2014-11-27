@@ -104,7 +104,8 @@ header
   background: url(../img/header_bg.jpg)
   +cover
   .header__text-top
-
+    position: relative
+    z-index: 1
 
     h1
       font-family: 'bouquetregular'
@@ -355,30 +356,41 @@ header
 
 .header--bottom
   @extend header
+  padding-top: 0
+  .header__text-top--bottom
+    margin-top: 70px
+  .header__text--bottom
+    p
+      font-family: 'core_rhino_65_boldregular'
+      font-size: 29px
+      line-height: 1.2em
+  .header__img--bottom
+    top: -170px
 
 .other
-  padding-top: 70px
+  padding-top: 120px
   text-align: center
   padding-bottom: 55px
-
+  h2
+    font-family: 'bouquetregular'
+    font-size: 58px
+    color: #282828
+    position: relative
+    z-index: 1
   .item
-    padding: 30px 40px 100px
-    margin-top: 30px
-    margin-left: -15px
-    margin-right: -15px
-    +border-radius(4px)
-    +background-clip(padding-box)
+    padding: 30px
+    margin-top: 10px
     //border: 3px rgb(219,219,219) solid
     text-align: center
-    background: url(../img/other-form_bg.png) no-repeat
     +cover
 
 
     h3
-      font-size: 23px
-      font-family: 'NeoSansW1G-Regular'
+      font-size: 18px
+      font-family: 'core_rhino_45_regularregular'
       color: #181818
-      margin: 0 0 10px
+      margin: 0 0 15px
+      padding: 0 20px
 
     p
       font-size: 29px
@@ -390,21 +402,23 @@ header
     display: inline-block
     background: #ffffff
     text-align: center
-    margin-bottom: 15px
-    height: 179px
-    span
-      vertical-align: middle
-      display: inline-block
-      height: 100%
+    margin-bottom: 20px
+    height: 232px
+    width: 232px
+    +border-radius(117px)
+    border: solid 6px #c4422c
+    line-height: 220px
     img
       vertical-align: middle
       display: inline-block
   .price-b
-    font-family: 'NeoSansW1G-Bold'
+    font-family: 'core_rhino_45_regularregular'
     color: #181818
     font-size: 26px
     margin-bottom: 15px
   
+  form
+    padding: 0 5px
 
   input
     +placeholder
@@ -419,15 +433,16 @@ header
     +border-radius(3px)
     +background-clip(padding-box)
     +background-image(linear-gradient(to bottom, #fff 0%, #fff 1%, #fff 100%))
+
     &:focus
       @include box-shadow(0 0 9px rgba(204,62,82,.13)) // outer glow
 
 
   button
     width: 100%
-    font-family: 'NeoSansW1G-Regular'
-    text-transform: uppercase
-    font-size: 21px
+    font-family: 'bouquetregular'
+    text-transform: none
+    font-size: 26px
     margin-top: 15px
 
 
