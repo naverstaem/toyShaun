@@ -1683,7 +1683,7 @@ input::placeholder, textarea::placeholder { font-size: 15px; text-transform: non
 .navbar-default .navbar-nav li a:after { position: absolute; content: ""; top: 12px; right: 0; width: 0; height: 25px; border-right: solid 1px #e1e1e1; }
 .navbar-default .navbar-nav li a.last:after { border-right: none; }
 .navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a.active, .navbar-default .navbar-nav li a:focus { text-decoration: none; color: #93ae4c; }
-.navbar-default .navbar-right { margin-top: 0; }
+.navbar-default .navbar-right { margin-top: -10px; }
 .navbar-default .navbar-right .right-nomenclature { color: #999; font-size: 11px; text-transform: none; position: relative; font-family: "core_rhino_45_regularregular"; top: -10px; }
 .navbar-default .navbar-right .right-b { display: inline-block; text-align: right; }
 .navbar-default .navbar-right .right-b h2 { font-weight: normal; font-size: 23px; margin: 0; font-family: "core_rhino_55_mediumregular"; color: #282828; }
@@ -1831,4 +1831,5 @@ footer .footer__right a:hover { text-decoration: none; }
 @media (max-width: 992px) { header, .header--bottom { overflow: hidden; } }
 @media (max-width: 768px) { h1, h2 { font-size: 24px !important; }
   header .header__text-top h3, .header--bottom .header__text-top h3 { top: 0; left: 0; }
-  .info__header h3 { top: 0; left: 0; } }
+  .info__header h3 { top: 0; left: 0; }
+  .navbar-right { margin-top: 10px !important; } }
